@@ -1,0 +1,83 @@
+package tech.vandersonandrade.composicao;
+
+import java.util.Scanner;
+
+public class Endereco {
+
+    private String rua;
+    private String numero;
+    private String cep;
+    private String cidade;
+    private String estado;
+    private String pais;
+    Scanner leitor = new Scanner(System.in);
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public Endereco() {
+        System.out.println("Digite a rua: ");
+        this.rua = leitor.nextLine();
+        System.out.println("Digite numero: ");
+        this.numero = leitor.nextLine();
+        System.out.println("digite cep: ");
+        this.cep = leitor.nextLine();
+        System.out.println("digite cidade: ");
+        this.cidade = leitor.nextLine();
+        System.out.println("digite estado: ");
+        this.estado = leitor.nextLine();
+        System.out.println("Digite pais: ");
+        this.pais = leitor.nextLine();
+
+    }
+
+    public void cadastrar() {
+
+    }
+}
+
